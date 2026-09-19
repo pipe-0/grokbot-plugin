@@ -1,0 +1,22 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Structural checks
+        run: node scripts/validate.mjs
+      - name: Validate Cursor manifest against the published schema
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/cursor/plugins/main/schemas/plugin.schema.json -o /tmp/plugin.schema.json
+          npm i --no-save --silent ajv-cli@5 ajv-formats@2
+          npx ajv validate --spec=draft7 -c ajv-formats -s /tmp/plugin.schema.json -d .cursor-plugin/plugin.json
