@@ -2,12 +2,12 @@
   "name": "pipe0",
   "displayName": "pipe0",
   "version": "1.0.0",
-  "description": "Search for people and companies, enrich them with work emails, phone numbers, and LinkedIn data, and operate pipe0 Sheets, schedules, and reports through the hosted pipe0 MCP server. Sign in with your pipe0 account on first connect.",
+  "description": "Prospect leads, enrich contacts with work emails and phone numbers, and build GTM automations in pipe0 Sheets through the hosted pipe0 MCP server. Sign in with your pipe0 account on first connect.",
   "author": {
     "name": "pipe0"
   },
   "homepage": "https://pipe0.com/docs/sdks/mcp",
-  "repository": "https://github.com/pipe-0/pipe0-plugin",
+  "repository": "https://github.com/pipe-0/grokbot-plugin",
   "license": "MIT",
   "logo": "assets/logo.svg",
   "keywords": [
@@ -21,7 +21,12 @@
     "mcp"
   ],
   "category": "integrations",
-  "tags": ["pipe0", "enrichment", "prospecting", "mcp"],
+  "tags": [
+    "pipe0",
+    "enrichment",
+    "prospecting",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": "./mcp.json"
 }

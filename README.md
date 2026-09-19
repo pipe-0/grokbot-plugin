@@ -23,7 +23,7 @@ grok plugin install pipe0 --trust
 Or straight from this repository:
 
 ```bash
-grok plugin install pipe-0/pipe0-plugin --trust
+grok plugin install pipe-0/grokbot-plugin --trust
 ```
 
 Inside the TUI, `/marketplace` browses the catalog and `/plugin` manages installed plugins. The first pipe0 tool call opens the browser for sign-in.
@@ -76,7 +76,7 @@ Production tool calls are billed in pipe0 credits like regular API requests. Too
 .cursor-plugin/plugin.json     Cursor Marketplace manifest (Grok Bot and Cursor)
 .mcp.json                      MCP server config read by Grok Build
 mcp.json                       Same config, read by Cursor
-skills/pipe0/SKILL.md          Router skill: what pipe0 is and how to work with it
+skills/pipe0/SKILL.md          Skill: what to do when pipe0 is not signed in. The server sends its own instructions once connected
 assets/logo.svg                Marketplace logo
 ```
 

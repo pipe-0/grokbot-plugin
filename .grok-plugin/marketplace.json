@@ -7,12 +7,21 @@
   "plugins": [
     {
       "name": "pipe0",
-      "description": "Search for people and companies, enrich them with work emails, phone numbers, and LinkedIn data, and operate pipe0 Sheets, schedules, and reports through the hosted pipe0 MCP server.",
+      "description": "Prospect leads, enrich contacts with work emails and phone numbers, and build GTM automations in pipe0 Sheets through the hosted pipe0 MCP server.",
       "category": "development",
       "source": "./",
       "homepage": "https://pipe0.com/docs/sdks/mcp",
-      "keywords": ["pipe0", "pipe0 mcp", "pipe0 sheets", "pipe0 enrichment", "pipe0 search"],
-      "domains": ["pipe0.com", "api.pipe0.com"]
+      "keywords": [
+        "pipe0",
+        "pipe0 mcp",
+        "pipe0 sheets",
+        "pipe0 enrichment",
+        "pipe0 search"
+      ],
+      "domains": [
+        "pipe0.com",
+        "api.pipe0.com"
+      ]
     }
   ]
 }
