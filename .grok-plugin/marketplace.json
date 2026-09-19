@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "pipe0",
-      "description": "Prospect leads, enrich contacts with work emails and phone numbers, and build GTM automations in pipe0 Sheets through the hosted pipe0 MCP server.",
+      "description": "Prospect leads, enrich contacts with work emails and phone numbers, and build GTM automations with pipe0.",
       "category": "development",
       "source": "./",
       "homepage": "https://pipe0.com/docs/sdks/mcp",
